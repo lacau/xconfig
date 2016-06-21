@@ -14,8 +14,8 @@ key.to.my.config.b=My config value B
 #### *XConfigServiceTest.java*
 * Test class.
 ```java
-import br.com.uol.xconfig.exception.ConfigNotFoundException;
-import br.com.uol.xconfig.model.XConfig;
+import br.com.xconfig.exception.ConfigNotFoundException;
+import br.com.xconfig.model.model.XConfig;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
