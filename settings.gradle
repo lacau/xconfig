@@ -1,0 +1,13 @@
+rootProject.name = 'xconfig'
+
+//Todos os arquivos build.gradlee devem ser renomeados para ${nome-do-projeto}.gradle
+rootProject.buildFileName = rootProject.name.concat('.gradle')
+
+def renameBuildGradle(project) {
+    project.children.each { subproject ->
+        subproject.buildFileName = subproject.name.concat('.gradle')
+        renameBuildGradle(subproject)
+    }
+}
+
+renameBuildGradle(rootProject)
